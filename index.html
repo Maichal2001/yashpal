@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Profile Image */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .mobile {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        /* Favourite Image */
+        .fav-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 500px;
+                padding: 30px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            .mobile {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <!-- Profile Photo -->
+    <img src="photo.png" alt="Profile Photo" class="profile-img">
+
+    <!-- Name -->
+    <h1><B>YASH PAL BHAGAT</B></h1>
+
+    <!-- Mobile -->
+    <h2> <div class="mobile">Mobile: +91-96220 02183</div></h2>
+
+ <!-- Call Button -->
+    <a href="tel:+919876543210" class="call-btn">📞 Call Now</a><br>
+
+    <!-- Favourite Picture -->
+    <img src="pic.png" alt="Favourite Picture" class="fav-img">
+</div>
+
+</body>
+</html>
